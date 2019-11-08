@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 100 -T 0 -C 0.1 -D 0.01 -U 1.0 -M 0.0 -S -1.0 -A -c -1
+Relation:     R_data_frame-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    28056
+Attributes:   7
+              WKcol
+              WKrow
+              WRcol
+              WRrow
+              BKcol
+              BKrow
+              Class
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.01 (282 instances)
+Minimum metric <confidence>: 0.1
+Number of cycles performed: 99
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 228
+
+Size of set of large itemsets L(2): 141
+
+Best rules found:
+
+  1. WKrow=2 BKcol=3 620 ==> Class=13 294    conf:(0.47)
+  2. WKrow=1 WRcol=1 1559 ==> Class=14 669    conf:(0.43)
+  3. WKrow=1 BKcol=3 1274 ==> Class=14 520    conf:(0.41)
+  4. WKrow=3 BKrow=5 716 ==> Class=12 292    conf:(0.41)
+  5. WKrow=2 BKrow=6 1150 ==> Class=13 458    conf:(0.4)
+  6. WKrow=1 BKrow=7 1584 ==> Class=14 624    conf:(0.39)
+  7. WKrow=2 BKrow=7 1088 ==> Class=13 402    conf:(0.37)
+  8. WKrow=1 WRcol=8 1624 ==> Class=14 593    conf:(0.37)
+  9. WKrow=1 BKcol=4 1460 ==> Class=14 520    conf:(0.36)
+ 10. WKrow=1 WRrow=1 1428 ==> Class=14 495    conf:(0.35)
+ 11. WKrow=2 BKcol=4 840 ==> Class=13 287    conf:(0.34)
+ 12. WKcol=2 BKcol=7 902 ==> Class=14 306    conf:(0.34)
+ 13. WKrow=2 WRrow=2 960 ==> Class=13 317    conf:(0.33)
+ 14. WKcol=2 BKcol=8 964 ==> Class=13 316    conf:(0.33)
+ 15. WKrow=1 BKcol=5 1646 ==> Class=14 536    conf:(0.33)
+ 16. WKrow=1 WRrow=8 1589 ==> Class=14 516    conf:(0.32)
+ 17. WKrow=1 BKrow=6 1646 ==> Class=14 530    conf:(0.32)
+ 18. WKrow=1 BKrow=5 1708 ==> Class=14 547    conf:(0.32)
+ 19. WKrow=3 BKcol=7 902 ==> Class=12 287    conf:(0.32)
+ 20. WKcol=4 WKrow=1 3596 ==> Class=14 1139    conf:(0.32)
+ 21. WKrow=1 BKrow=8 1522 ==> Class=14 481    conf:(0.32)
+ 22. WKcol=4 BKrow=2 1336 ==> Class=8 419    conf:(0.31)
+ 23. WKrow=2 WRcol=1 1069 ==> Class=13 334    conf:(0.31)
+ 24. WKrow=1 WRrow=5 1604 ==> Class=14 489    conf:(0.3)
+ 25. WKrow=2 WRcol=8 1096 ==> Class=13 332    conf:(0.3)
+ 26. WKrow=2 WRcol=5 1087 ==> Class=12 329    conf:(0.3)
+ 27. WKrow=2 WRcol=2 1047 ==> Class=13 316    conf:(0.3)
+ 28. WKrow=1 BKcol=7 1894 ==> Class=14 570    conf:(0.3)
+ 29. WKcol=3 WKrow=1 3596 ==> Class=14 1070    conf:(0.3)
+ 30. WKrow=2 BKrow=4 1274 ==> Class=13 379    conf:(0.3)
+ 31. WKrow=1 BKrow=4 1770 ==> Class=14 526    conf:(0.3)
+ 32. WKrow=2 BKrow=5 1212 ==> Class=13 356    conf:(0.29)
+ 33. WKrow=1 BKcol=4 1460 ==> Class=15 428    conf:(0.29)
+ 34. WKrow=2 WRrow=1 1105 ==> Class=13 323    conf:(0.29)
+ 35. WKrow=2 BKcol=5 1088 ==> Class=13 314    conf:(0.29)
+ 36. WKcol=3 BKrow=7 1088 ==> Class=13 308    conf:(0.28)
+ 37. WKrow=1 WRcol=2 1542 ==> Class=14 430    conf:(0.28)
+ 38. WKcol=3 BKrow=6 1150 ==> Class=13 320    conf:(0.28)
+ 39. WKrow=1 BKcol=5 1646 ==> Class=15 457    conf:(0.28)
+ 40. WKcol=3 BKrow=5 1212 ==> Class=14 335    conf:(0.28)
+ 41. WKrow=1 BKcol=6 1832 ==> Class=14 504    conf:(0.28)
+ 42. WKrow=1 WRrow=2 1629 ==> Class=14 447    conf:(0.27)
+ 43. WKrow=1 BKcol=2 1240 ==> Class=14 340    conf:(0.27)
+ 44. WKrow=1 WRrow=4 1609 ==> Class=14 441    conf:(0.27)
+ 45. WKrow=1 BKrow=3 1832 ==> Class=14 502    conf:(0.27)
+ 46. WKrow=1 12666 ==> Class=14 3447    conf:(0.27)
+ 47. WKrow=1 WRrow=3 1614 ==> Class=14 439    conf:(0.27)
+ 48. WKrow=2 WRrow=5 1080 ==> Class=12 292    conf:(0.27)
+ 49. WKrow=1 BKrow=5 1708 ==> Class=15 460    conf:(0.27)
+ 50. WKrow=1 WRcol=7 1619 ==> Class=14 435    conf:(0.27)
+ 51. WKcol=4 WKrow=2 3410 ==> Class=13 916    conf:(0.27)
+ 52. WKrow=1 BKrow=4 1770 ==> Class=15 471    conf:(0.27)
+ 53. WKrow=2 BKcol=6 1336 ==> Class=13 353    conf:(0.26)
+ 54. WKrow=2 BKrow=5 1212 ==> Class=14 320    conf:(0.26)
+ 55. WKrow=2 WRrow=3 1095 ==> Class=13 288    conf:(0.26)
+ 56. BKcol=4 2796 ==> Class=14 733    conf:(0.26)
+ 57. BKcol=3 2390 ==> Class=14 623    conf:(0.26)
+ 58. WKrow=2 WRcol=7 1092 ==> Class=13 283    conf:(0.26)
+ 59. WKrow=2 BKcol=7 1398 ==> Class=13 361    conf:(0.26)
+ 60. WKcol=3 BKcol=5 1274 ==> Class=14 328    conf:(0.26)
+ 61. WKrow=1 WRcol=5 1611 ==> Class=13 412    conf:(0.26)
+ 62. WKrow=1 WRcol=5 1611 ==> Class=14 412    conf:(0.26)
+ 63. WKcol=2 WKrow=1 3596 ==> Class=14 909    conf:(0.25)
+ 64. WKrow=1 BKrow=6 1646 ==> Class=15 414    conf:(0.25)
+ 65. WKrow=2 BKrow=4 1274 ==> Class=14 320    conf:(0.25)
+ 66. WKcol=1 1878 ==> Class=15 470    conf:(0.25)
+ 67. WKcol=1 WKrow=1 1878 ==> Class=15 470    conf:(0.25)
+ 68. WKcol=2 5316 ==> Class=14 1326    conf:(0.25)
+ 69. WKcol=3 BKcol=6 1336 ==> Class=13 333    conf:(0.25)
+ 70. WKrow=1 BKcol=2 1240 ==> Class=13 307    conf:(0.25)
+ 71. WKcol=3 BKrow=4 1240 ==> Class=13 305    conf:(0.25)
+ 72. WKcol=3 WKrow=2 3410 ==> Class=13 837    conf:(0.25)
+ 73. WKrow=1 WRrow=7 1594 ==> Class=15 391    conf:(0.25)
+ 74. WKcol=3 BKrow=4 1240 ==> Class=14 303    conf:(0.24)
+ 75. WKrow=4 1720 ==> Class=9 420    conf:(0.24)
+ 76. WKcol=4 WKrow=4 1720 ==> Class=9 420    conf:(0.24)
+ 77. WKcol=2 WKrow=2 1720 ==> Class=14 417    conf:(0.24)
+ 78. WKrow=2 8540 ==> Class=13 2037    conf:(0.24)
+ 79. BKcol=5 3450 ==> Class=14 817    conf:(0.24)
+ 80. WKrow=1 BKcol=3 1274 ==> Class=15 299    conf:(0.23)
+ 81. WKrow=1 WRrow=5 1604 ==> Class=13 376    conf:(0.23)
+ 82. WKrow=1 BKrow=8 1522 ==> Class=13 355    conf:(0.23)
+ 83. BKrow=7 3360 ==> Class=13 783    conf:(0.23)
+ 84. WKrow=1 BKrow=7 1584 ==> Class=13 367    conf:(0.23)
+ 85. WKrow=1 WRcol=3 1547 ==> Class=14 355    conf:(0.23)
+ 86. BKrow=5 3822 ==> Class=14 877    conf:(0.23)
+ 87. WRcol=1 3468 ==> Class=14 794    conf:(0.23)
+ 88. WKcol=3 BKcol=7 1398 ==> Class=12 320    conf:(0.23)
+ 89. WKrow=2 BKcol=6 1336 ==> Class=14 302    conf:(0.23)
+ 90. WKcol=3 BKcol=8 1460 ==> Class=12 330    conf:(0.23)
+ 91. BKrow=4 3788 ==> Class=14 853    conf:(0.23)
+ 92. WKrow=1 BKcol=6 1832 ==> Class=15 410    conf:(0.22)
+ 93. WKrow=1 WRrow=7 1594 ==> Class=14 355    conf:(0.22)
+ 94. WKrow=1 WRcol=2 1542 ==> Class=15 340    conf:(0.22)
+ 95. BKrow=6 3608 ==> Class=13 774    conf:(0.21)
+ 96. WKrow=4 1720 ==> Class=8 366    conf:(0.21)
+ 97. WKcol=4 WKrow=4 1720 ==> Class=8 366    conf:(0.21)
+ 98. WKrow=1 BKcol=1 1364 ==> Class=12 289    conf:(0.21)
+ 99. WKrow=1 BKrow=3 1832 ==> Class=15 388    conf:(0.21)
+100. WKcol=3 BKcol=6 1336 ==> Class=14 281    conf:(0.21)
+

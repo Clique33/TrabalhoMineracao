@@ -1,0 +1,79 @@
+Call: AutoWEKAClassifier -seed 123 -timeLimit 15 -memLimit 1024 -nBestConfigs 1 -metric errorRate -parallelRuns 1
+
+Auto-WEKA result:
+best classifier: weka.classifiers.trees.RandomForest
+arguments: [-I, 10, -K, 0, -depth, 0]
+attribute search: null
+attribute search arguments: []
+attribute evaluation: null
+attribute evaluation arguments: []
+metric: errorRate
+estimated errorRate: 0.012688907898488738
+training time on evaluation dataset: 1.394 seconds
+
+You can use the chosen classifier in your own code as follows:
+
+Classifier classifier = AbstractClassifier.forName("weka.classifiers.trees.RandomForest", new String[]{"-I", "10", "-K", "0", "-depth", "0"});
+classifier.buildClassifier(instances);
+
+
+Correctly Classified Instances       27700               98.7311 %
+Incorrectly Classified Instances       356                1.2689 %
+Kappa statistic                          0.9858
+Mean absolute error                      0.0166
+Root mean squared error                  0.0653
+Relative absolute error                 16.7232 %
+Root relative squared error             29.2956 %
+Total Number of Instances            28056     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m    n    o    p    q    r   <-- classified as
+ 2783    0    0    2    2    2    1    1    1    0    0    0    0    0    0    4    0    0 |    a = 1
+    0  676    1    0    0    0    0    0    0    0    5    0    0    0    1    0    0    0 |    b = 2
+    0    2  587    0    0    0    0    0    0    0    1    0    0    0    0    0    2    0 |    c = 3
+    1    0    0  389    0    0    0    0    0    0    0    0    0    0    0    0    0    0 |    d = 4
+    3    0    0    0 1964    3    0    2    0    0    1    8    0    1    1    1    1    0 |    e = 5
+   14    0    0    0    1 4151    0    7    0    0    0    1    5    0    0   15    0    0 |    f = 6
+    0    0    0    0    0    0   80    0    1    0    0    0    0    0    0    0    0    0 |    g = 7
+   10    0    0    0    3   20    0 3551    0    0    1    7    0    0    0    4    1    0 |    h = 8
+    0    0    0    0    0    0    0    0  246    0    0    0    0    0    0    0    0    0 |    i = 9
+    0    0    1    0    0    0    0    0    0   25    0    0    0    1    0    0    0    0 |    j = 10
+    2    1    0    0    4    0    0    1    0    0 1422    2    1    0    0    0    0    0 |    k = 11
+    9    0    1    0    7   12    0   27    0    0    1 2793    0    0    0    2    2    0 |    l = 12
+   13    0    0    8    0    4    0    0    0    0    1    0 2133    0    0    7    0    0 |    m = 13
+    1    3    5    0    0    0    0    0    0    0    0    0    0  461    0    0    1    0 |    n = 14
+    0    0    1    0    0    0    0    0    0    0    0    0    0    4  193    0    0    0 |    o = 15
+   13    0    0    0    0   17    0    4    0    0    0    2   20    0    0 4496    1    0 |    p = 16
+    5    3    2    0    8    1    0    6    0    0    2    6    0    2    0    0 1677    0 |    q = 17
+    0    0    0    0    0    0    0    0    4    0    0    1    0    0    0    0    0   73 |    r = 18
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,995    0,003    0,975      0,995    0,985      0,984    1,000     0,999     1
+                 0,990    0,000    0,987      0,990    0,988      0,988    1,000     0,998     2
+                 0,992    0,000    0,982      0,992    0,987      0,986    1,000     0,999     3
+                 0,997    0,000    0,975      0,997    0,986      0,986    1,000     0,998     4
+                 0,989    0,001    0,987      0,989    0,988      0,988    1,000     0,998     5
+                 0,990    0,002    0,986      0,990    0,988      0,986    1,000     0,999     6
+                 0,988    0,000    0,988      0,988    0,988      0,988    1,000     0,997     7
+                 0,987    0,002    0,987      0,987    0,987      0,985    1,000     0,998     8
+                 1,000    0,000    0,976      1,000    0,988      0,988    1,000     1,000     9
+                 0,926    0,000    1,000      0,926    0,962      0,962    1,000     1,000     10
+                 0,992    0,000    0,992      0,992    0,992      0,992    1,000     0,999     11
+                 0,979    0,001    0,990      0,979    0,984      0,983    1,000     0,998     12
+                 0,985    0,001    0,988      0,985    0,986      0,985    1,000     0,998     13
+                 0,979    0,000    0,983      0,979    0,981      0,981    1,000     0,997     14
+                 0,975    0,000    0,990      0,975    0,982      0,982    1,000     0,998     15
+                 0,987    0,001    0,993      0,987    0,990      0,988    1,000     0,999     16
+                 0,980    0,000    0,995      0,980    0,987      0,987    1,000     0,998     17
+                 0,936    0,000    1,000      0,936    0,967      0,967    1,000     0,998     18
+Weighted Avg.    0,987    0,001    0,987      0,987    0,987      0,986    1,000     0,998     
+
+Temporary run directories:
+C:\Users\Frog33\AppData\Local\Temp\autoweka2412174225769832318\
+
+
+For better performance, try giving Auto-WEKA more time.
+Tried 35 configurations; to get good results reliably you may need to allow for trying thousands of configurations.

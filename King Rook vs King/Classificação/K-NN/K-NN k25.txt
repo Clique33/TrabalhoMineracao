@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 25 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     R_data_frame-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    28056
+Attributes:   7
+              V1
+              V2
+              V3
+              V4
+              V5
+              V6
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 25 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       17580               62.6604 %
+Incorrectly Classified Instances     10476               37.3396 %
+Kappa statistic                          0.5787
+Mean absolute error                      0.0762
+Root mean squared error                  0.1827
+Relative absolute error                 76.5694 %
+Root relative squared error             81.886  %
+Total Number of Instances            28056     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    ?          0,000    ?          ?        0,993     0,259     0
+                 0,321    0,000    0,893      0,321    0,472      0,534    0,991     0,606     1
+                 0,764    0,004    0,633      0,764    0,692      0,693    0,997     0,749     2
+                 0,123    0,000    0,769      0,123    0,213      0,308    0,994     0,439     3
+                 0,561    0,001    0,835      0,561    0,671      0,682    0,994     0,716     4
+                 0,648    0,006    0,666      0,648    0,657      0,651    0,990     0,700     5
+                 0,618    0,006    0,688      0,618    0,651      0,645    0,984     0,722     6
+                 0,403    0,003    0,768      0,403    0,528      0,549    0,971     0,575     7
+                 0,685    0,023    0,614      0,685    0,647      0,628    0,970     0,692     8
+                 0,544    0,020    0,636      0,544    0,586      0,564    0,953     0,626     9
+                 0,448    0,018    0,652      0,448    0,532      0,513    0,942     0,598     10
+                 0,594    0,041    0,622      0,594    0,608      0,565    0,930     0,644     11
+                 0,637    0,060    0,611      0,637    0,624      0,567    0,923     0,680     12
+                 0,715    0,082    0,605      0,715    0,655      0,592    0,924     0,718     13
+                 0,858    0,116    0,589      0,858    0,698      0,644    0,947     0,808     14
+                 0,648    0,036    0,598      0,648    0,622      0,590    0,973     0,762     15
+                 0,085    0,001    0,600      0,085    0,148      0,222    0,993     0,732     16
+                 0,418    0,007    0,869      0,418    0,565      0,577    0,955     0,797     17
+Weighted Avg.    0,627    0,050    ?          0,627    ?          ?        0,947     0,711     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k    l    m    n    o    p    q    r   <-- classified as
+    0    0   11    0    0    0    0    0    4    1    4    0    5    1    1    0    0    0 |    a = 0
+    0   25   23    0    0    6    0    2   11    4    1    3    1    1    0    0    0    1 |    b = 1
+    0    1  188    1    1    9    0    1   15    4    6    8   11    1    0    0    0    0 |    c = 2
+    0    0   32   10    7   25    3    1    0    0    0    0    0    1    0    0    0    2 |    d = 3
+    0    0    0    0  111   31   19    0   10    3    3    1    9    7    2    0    0    2 |    e = 4
+    0    0    2    1    5  305   42   11   16   21   11   11   18   13   10    0    0    5 |    f = 5
+    0    0    9    0    7   28  366   19   62   24   13   14   14   13   12    2    0    9 |    g = 6
+    0    0    5    0    0   13   34  275  131   62   37   30   26   15   31   11    1   12 |    h = 7
+    0    0    3    0    0    3   23   21  981  133   43   47   58   39   45    8    3   26 |    i = 8
+    0    0    8    0    0   11   10    4  186  931  130  132  110   67   69   17    0   37 |    j = 9
+    0    0    0    0    0    8    4    2   83  150  890  348  181  134  131   23    3   28 |    k = 10
+    0    0    0    0    0    2    6    0   21   43  112 1696  424  255  223   48    1   23 |    l = 11
+    0    0    0    0    0    0    5    0    4   26   51  236 2290  615  305   48    0   17 |    m = 12
+    0    0    0    0    0    0    0    0    3    4   19   42  335 2998  674  105    2   12 |    n = 13
+    0    0    0    0    0    0    0    0    0    0    3   21   35  432 3907  149    4    2 |    o = 14
+    0    0    0    0    0    0    0    0    0    0    1    1    5   25  730 1404    0    0 |    p = 15
+    0    0    0    0    0    0    0    0    0    0    0    0    0    3   24  330   33    0 |    q = 16
+    0    2   16    1    2   17   20   22   71   57   40  136  225  336  471  202    8 1170 |    r = 17
+
